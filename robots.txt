@@ -1,0 +1,29 @@
+# robots.txt para FYIT - fyit.com.br
+# Otimizado para indexação completa do Google
+
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+
+# Bloquear arquivos que não devem ser indexados
+Disallow: /painel.html
+Disallow: /painel-screenshot-*.html
+Disallow: /*.json
+Disallow: /convert_video.py
+Disallow: /convert-video.sh
+
+# Permitir crawlers de busca importantes
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://fyit.com.br/sitemap.xml
