@@ -9,6 +9,7 @@
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "optimize:html": "node scripts/optimize-html.js",
     "optimize:images": "node scripts/optimize-images.js",
+    "start": "serve . -p ${PORT:-3000} -s",
     "test": "npm run test:html && npm run test:lighthouse",
     "test:html": "html-validator --file='*.html' --verbose",
     "test:lighthouse": "echo 'Lighthouse test - run manually'",
@@ -31,6 +32,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "canvas": "^3.2.0"
+    "canvas": "^3.2.0",
+    "serve": "^14.2.1"
   }
 }
