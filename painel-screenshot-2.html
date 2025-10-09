@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { margin: 0; padding: 40px; background: #f5f5f5; font-family: -apple-system, sans-serif; }
+.container { max-width: 900px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px; }
+.macro-card { background: white; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.macro-title { color: #00E0D1; font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+.progress { width: 160px; height: 160px; margin: 0 auto 20px; position: relative; }
+.progress svg { transform: rotate(-90deg); }
+.progress-bg { fill: none; stroke: #f0f0f0; stroke-width: 16; }
+.purple { stroke: #8B5CF6; }
+.orange { stroke: #F97316; }
+.cyan { stroke: #00E0D1; }
+.progress-bar { fill: none; stroke-width: 16; stroke-linecap: round; stroke-dasharray: 377; }
+.value { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; font-weight: bold; }
+.percent { color: #00E0D1; font-size: 16px; font-weight: 600; margin-bottom: 5px; }
+.remain { color: #666; font-size: 14px; }
+.hydro-card { background: white; border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.hydro-progress { width: 250px; height: 250px; margin: 0 auto 30px; position: relative; }
+.green { stroke: #00FF88; }
+.hydro-value { font-size: 60px; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="grid">
+<div class="macro-card">
+<div class="macro-title">Proteínas</div>
+<div class="progress">
+<svg width="160" height="160">
+<circle class="progress-bg" cx="80" cy="80" r="60"/>
+<circle class="progress-bar purple" cx="80" cy="80" r="60" style="stroke-dashoffset: 19"/>
+</svg>
+<div class="value">133</div>
+</div>
+<div class="percent">95% da meta</div>
+<div class="remain">Restam: 7 g</div>
+</div>
+<div class="macro-card">
+<div class="macro-title">Carboidratos</div>
+<div class="progress">
+<svg width="160" height="160">
+<circle class="progress-bg" cx="80" cy="80" r="60"/>
+<circle class="progress-bar orange" cx="80" cy="80" r="60" style="stroke-dashoffset: 136"/>
+</svg>
+<div class="value">175</div>
+</div>
+<div class="percent">64% da meta</div>
+<div class="remain">Restam: 100 g</div>
+</div>
+<div class="macro-card">
+<div class="macro-title">Gorduras</div>
+<div class="progress">
+<svg width="160" height="160">
+<circle class="progress-bg" cx="80" cy="80" r="60"/>
+<circle class="progress-bar cyan" cx="80" cy="80" r="60" style="stroke-dashoffset: 117"/>
+</svg>
+<div class="value">59</div>
+</div>
+<div class="percent">69% da meta</div>
+<div class="remain">Restam: 26 g</div>
+</div>
+<div class="macro-card">
+<div class="macro-title">Fibras</div>
+<div class="progress">
+<svg width="160" height="160">
+<circle class="progress-bg" cx="80" cy="80" r="60"/>
+<circle class="progress-bar purple" cx="80" cy="80" r="60" style="stroke-dashoffset: 38"/>
+</svg>
+<div class="value">27</div>
+</div>
+<div class="percent">90% da meta</div>
+<div class="remain">Restam: 3 g</div>
+</div>
+</div>
+<div class="hydro-card">
+<div class="macro-title">Hidratação</div>
+<div class="hydro-progress">
+<svg width="250" height="250">
+<circle class="progress-bg" cx="125" cy="125" r="100" style="stroke-width: 24"/>
+<circle class="progress-bar green" cx="125" cy="125" r="100" style="stroke-width: 24; stroke-dasharray: 628; stroke-dashoffset: 396"/>
+</svg>
+<div class="value hydro-value">930<span style="font-size: 20px; color: #666; display: block; margin-top: -10px;">ml</span></div>
+</div>
+<div class="percent">37% da meta</div>
+<div class="remain">Meta: 2500 ml</div>
+<div class="remain">Restam: 1570 ml</div>
+</div>
+</div>
+</body>
+</html>

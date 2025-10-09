@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { margin: 0; padding: 40px; background: #f5f5f5; font-family: -apple-system, sans-serif; }
+.container { max-width: 750px; margin: 0 auto; }
+.card { background: white; border-radius: 20px; padding: 30px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.greeting { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.greeting-left { display: flex; align-items: center; gap: 15px; }
+.icon { font-size: 40px; }
+.greeting-text h3 { font-size: 24px; font-weight: bold; margin: 0 0 5px 0; }
+.greeting-text p { color: #666; margin: 0; }
+.btn { background: #00E0D1; color: white; border: none; padding: 15px 30px; border-radius: 12px; font-weight: 600; cursor: pointer; }
+.insight { display: flex; align-items: center; gap: 10px; padding-top: 20px; border-top: 1px solid #f0f0f0; }
+.insight-icon { font-size: 24px; }
+.section-title { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; margin-bottom: 25px; }
+.actions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.action-btn { padding: 20px; border-radius: 16px; border: none; color: white; font-weight: 600; font-size: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.blue { background: linear-gradient(135deg, #4F9FF5 0%, #00D4D4 100%); }
+.orange { background: linear-gradient(135deg, #D97706 0%, #DC2626 100%); }
+.pink { background: linear-gradient(135deg, #DB2777 0%, #EC4899 100%); }
+.brown { background: linear-gradient(135deg, #92400E 0%, #EA580C 100%); }
+.green { background: linear-gradient(135deg, #059669 0%, #10B981 100%); }
+.magenta { background: linear-gradient(135deg, #BE185D 0%, #EC4899 100%); }
+.yellow { background: linear-gradient(135deg, #CA8A04 0%, #EAB308 100%); }
+.emoji { font-size: 28px; }
+.insights-card { margin-bottom: 20px; }
+.insight-item { padding: 15px; border-radius: 12px; margin-bottom: 10px; display: flex; align-items: center; gap: 15px; }
+.warning { background: #FEF3C7; border: 1px solid #FDE68A; }
+.success { background: #D1FAE5; border: 1px solid #A7F3D0; }
+.insight-badge { background: #6B7280; color: white; padding: 5px 15px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.warning .insight-badge { background: #3B82F6; }
+.success .insight-badge { background: #10B981; }
+.insight-text { color: #92400E; font-size: 14px; }
+.success .insight-text { color: #065F46; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="greeting">
+<div class="greeting-left">
+<span class="icon">📅</span>
+<div class="greeting-text">
+<h3>Bom dia! 👋</h3>
+<p>Quinta-Feira, 9 De Outubro De 2025</p>
+</div>
+</div>
+<button class="btn">Muito bom</button>
+</div>
+<div class="insight">
+<span class="insight-icon">📈</span>
+<p style="margin: 0; font-weight: 500;">Cada escolha saudável conta! 💪</p>
+</div>
+</div>
+
+<div class="card insights-card">
+<div class="section-title">
+<span>💡</span>
+<span>Insights Nutricionais</span>
+</div>
+<div class="insight-item warning">
+<span style="font-size: 24px;">📉</span>
+<div style="flex: 1;">
+<div style="font-weight: 600; color: #92400E; margin-bottom: 5px;">Hidratação insuficiente</div>
+<div class="insight-text">Você precisa beber mais 1570ml de água hoje.</div>
+</div>
+<span class="insight-badge">Atenção</span>
+</div>
+<div class="insight-item success">
+<span style="font-size: 24px;">✅</span>
+<div style="flex: 1;">
+<div style="font-weight: 600; color: #065F46; margin-bottom: 5px;">Proteína adequada!</div>
+<div class="insight-text">Ótimo consumo de proteína para manutenção muscular.</div>
+</div>
+<span class="insight-badge">Sucesso</span>
+</div>
+</div>
+
+<div class="card">
+<div class="section-title">
+<span>⚡</span>
+<span>Ações Rápidas</span>
+</div>
+<div class="actions-grid">
+<button class="action-btn blue"><span class="emoji">💧</span>Água 250ml</button>
+<button class="action-btn blue"><span class="emoji">💧</span>Água 500ml</button>
+<button class="action-btn orange"><span class="emoji">☕</span>Café s/ açúcar</button>
+<button class="action-btn pink"><span class="emoji">🍎</span>Maçã média</button>
+<button class="action-btn brown"><span class="emoji">🍪</span>Biscoito integral</button>
+<button class="action-btn green"><span class="emoji">🥗</span>Salada verde</button>
+<button class="action-btn magenta"><span class="emoji">🍗</span>Peito frango 100g</button>
+<button class="action-btn yellow"><span class="emoji">🌾</span>Arroz integral</button>
+</div>
+</div>
+</div>
+</body>
+</html>

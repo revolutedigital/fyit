@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FYIT para Nutricionistas — Escale seu atendimento com IA</title>
+    <meta name="description" content="Ofereça análise de calorias por IA aos seus pacientes. White label com sua marca. Aumente fidelização e gere receita recorrente." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-charcoal': '#0E0E0E',
+              'brand-cyan': '#00E0D1',
+              'brand-green': '#00FF88',
+              'brand-text': '#FFFFFF',
+              'brand-light': '#C0C0C0'
+            },
+            borderRadius: {
+              'lgx': '0.75rem',
+              'mdx': '0.5rem'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+
+  <body class="bg-brand-charcoal text-white antialiased">
+    <!-- Header -->
+    <header class="border-b border-white/10 sticky top-0 bg-brand-charcoal/95 backdrop-blur-sm z-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a href="/" class="hover:opacity-80 transition-opacity">
+            <img src="logo.png" alt="FYIT" class="h-12 w-auto" />
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#beneficios" class="text-brand-light hover:text-brand-cyan transition-colors">Benefícios</a>
+            <a href="#como-funciona" class="text-brand-light hover:text-brand-cyan transition-colors">Como Funciona</a>
+            <a href="#precos" class="text-brand-light hover:text-brand-cyan transition-colors">Preços</a>
+            <a href="#contato" class="inline-flex items-center rounded-mdx bg-brand-cyan px-5 py-2.5 font-semibold text-brand-charcoal hover:opacity-90 transition-opacity">Falar com consultor</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="inicio" class="relative overflow-hidden py-16 lg:py-24">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <div class="flex justify-center">
+              <div class="inline-flex items-center gap-2 rounded-full bg-brand-cyan/10 px-4 py-2 ring-1 ring-brand-cyan/20 mb-6">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-cyan opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-cyan"></span>
+                </span>
+                <span class="text-sm font-semibold text-brand-cyan">Solução White Label</span>
+              </div>
+            </div>
+
+            <h1 class="text-[40px] leading-[48px] lg:text-[52px] lg:leading-[60px] font-bold tracking-tight">
+              Seus pacientes acompanhando a dieta <span class="text-brand-cyan">todo dia</span>
+            </h1>
+
+            <p class="mt-6 text-lg text-brand-light leading-relaxed">
+              Ofereça análise de calorias por IA aos seus pacientes. Com sua marca, seu logo, seu WhatsApp. <strong class="text-white">Eles aderem mais, você fideliza melhor, e ainda gera receita recorrente.</strong>
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 font-bold text-brand-charcoal text-lg hover:opacity-90 transition-opacity">
+                Quero para minha clínica
+              </a>
+              <a href="#como-funciona" class="inline-flex items-center justify-center rounded-lgx border-2 border-white/20 px-8 py-4 font-semibold text-white hover:border-brand-cyan hover:text-brand-cyan transition-colors">
+                Ver demonstração
+              </a>
+            </div>
+
+            <div class="mt-8 flex items-center justify-center gap-8">
+              <div>
+                <div class="text-3xl font-bold text-brand-cyan">+89%</div>
+                <div class="text-sm text-brand-light">Aderência à dieta</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-brand-cyan">10seg</div>
+                <div class="text-sm text-brand-light">Para análise completa</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-brand-cyan">24/7</div>
+                <div class="text-sm text-brand-light">Disponível sempre</div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problema -->
+      <section class="py-16 lg:py-24 bg-zinc-900/50">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold">Você conhece esse ciclo?</h2>
+            <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">A realidade de 90% dos nutricionistas hoje</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-lgx bg-red-500/10 ring-1 ring-red-500/20 p-6">
+              <div class="text-4xl mb-4">😰</div>
+              <h3 class="text-xl font-bold text-red-400 mb-2">Paciente não adere</h3>
+              <p class="text-brand-light text-sm">Saem da consulta motivados, mas em 3 dias já não registram mais nada. "Ah, esqueci de anotar"</p>
+            </div>
+
+            <div class="rounded-lgx bg-red-500/10 ring-1 ring-red-500/20 p-6">
+              <div class="text-4xl mb-4">📉</div>
+              <h3 class="text-xl font-bold text-red-400 mb-2">Resultado não vem</h3>
+              <p class="text-brand-light text-sm">Sem dados reais, você não consegue ajustar. Paciente não vê resultado e desiste.</p>
+            </div>
+
+            <div class="rounded-lgx bg-red-500/10 ring-1 ring-red-500/20 p-6">
+              <div class="text-4xl mb-4">💸</div>
+              <h3 class="text-xl font-bold text-red-400 mb-2">Não renova</h3>
+              <p class="text-brand-light text-sm">Paciente cancela em 2-3 meses. Você fica na esteira de sempre buscar novos pacientes.</p>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center">
+            <p class="text-xl text-white font-semibold">O problema não é o seu método. É a <span class="text-brand-cyan">ferramenta</span>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solução -->
+      <section id="beneficios" class="py-16 lg:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold">Com FYIT White Label, você oferece</h2>
+            <p class="mt-4 text-lg text-brand-light">Uma ferramenta que seus pacientes realmente usam</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="rounded-lgx bg-white/5 ring-1 ring-brand-cyan/20 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/10 flex items-center justify-center">
+                  <span class="text-2xl">📸</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Praticidade extrema</h3>
+                  <p class="text-brand-light">Seu paciente tira foto e pronto. 10 segundos. Análise completa de calorias, macros e insights. Ele não precisa pesar, procurar no banco de dados, nada.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-lgx bg-white/5 ring-1 ring-brand-cyan/20 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/10 flex items-center justify-center">
+                  <span class="text-2xl">🏷️</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">100% com sua marca</h3>
+                  <p class="text-brand-light">Seu logo, suas cores, seu WhatsApp. Paciente nem sabe que é tecnologia terceirizada. Aumenta sua autoridade e valor percebido.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-lgx bg-white/5 ring-1 ring-brand-cyan/20 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/10 flex items-center justify-center">
+                  <span class="text-2xl">📊</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Dashboard profissional</h3>
+                  <p class="text-brand-light">Você vê o que cada paciente comeu na semana. Dados reais para ajustes precisos. Consultas mais assertivas, resultados melhores.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-lgx bg-white/5 ring-1 ring-brand-cyan/20 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/10 flex items-center justify-center">
+                  <span class="text-2xl">💰</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Receita recorrente</h3>
+                  <p class="text-brand-light">Cobre R$30-50/mês de cada paciente pelo acesso. Ou inclua no valor da consulta e aumente seu ticket. Você escolhe o modelo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como Funciona -->
+      <section id="como-funciona" class="py-16 lg:py-24 bg-zinc-900/50">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold">Como funciona na prática</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex gap-6 items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-cyan flex items-center justify-center font-bold text-brand-charcoal">1</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Implantação em 48h</h3>
+                <p class="text-brand-light">Você envia logo, cores da marca, WhatsApp. Nossa equipe configura tudo. Você recebe o link personalizado pronto para usar.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-cyan flex items-center justify-center font-bold text-brand-charcoal">2</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Você oferece aos pacientes</h3>
+                <p class="text-brand-light">Na consulta, você explica a ferramenta. Paciente acessa pelo celular, tira foto da comida, recebe análise instantânea. Tudo automático.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-cyan flex items-center justify-center font-bold text-brand-charcoal">3</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Você acompanha pelo dashboard</h3>
+                <p class="text-brand-light">Vê o que cada paciente comeu, quantas calorias, se está seguindo o plano. Consultas de retorno ficam muito mais produtivas.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-cyan flex items-center justify-center font-bold text-brand-charcoal">4</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Resultados aparecem + Paciente renova</h3>
+                <p class="text-brand-light">Com aderência real à dieta, o resultado vem. Paciente fica feliz, renova, indica. Você escala sem aumentar horas trabalhadas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 max-w-sm mx-auto rounded-lgx bg-white/5 ring-1 ring-white/10 p-1">
+            <video
+              controls
+              preload="metadata"
+              class="w-full h-auto rounded-mdx"
+            >
+              <source src="demo-video.mov" type="video/quicktime">
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Preços -->
+      <section id="precos" class="py-16 lg:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold">Investimento</h2>
+            <p class="mt-4 text-lg text-brand-light">Escolha o plano ideal para o tamanho da sua clínica</p>
+          </div>
+
+          <div class="mb-8 text-center">
+            <div class="inline-block rounded-lgx bg-brand-cyan/10 ring-1 ring-brand-cyan/20 px-6 py-3">
+              <p class="text-lg"><span class="font-bold text-brand-cyan">R$ 5.000</span> <span class="text-brand-light">setup único (implantação + customização)</span></p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Plano 50 -->
+            <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="text-center">
+                <h3 class="text-2xl font-bold">Starter</h3>
+                <div class="mt-4">
+                  <span class="text-4xl font-bold text-brand-cyan">R$ 497</span>
+                  <span class="text-brand-light">/mês</span>
+                </div>
+                <p class="mt-2 text-brand-light">Até 50 pacientes ativos</p>
+              </div>
+
+              <ul class="mt-8 space-y-3">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Análise ilimitada de fotos</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Dashboard profissional</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">White label completo</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Suporte prioritário</span>
+                </li>
+              </ul>
+
+              <a href="#contato" class="mt-8 block w-full rounded-lgx bg-white/10 px-6 py-3 text-center font-semibold hover:bg-white/20 transition-colors">
+                Contratar
+              </a>
+            </div>
+
+            <!-- Plano 100 - Popular -->
+            <div class="rounded-lgx bg-white/5 ring-2 ring-brand-cyan p-8 relative scale-105">
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-cyan text-brand-charcoal px-4 py-1 rounded-full text-sm font-bold">
+                Mais popular
+              </div>
+
+              <div class="text-center">
+                <h3 class="text-2xl font-bold">Professional</h3>
+                <div class="mt-4">
+                  <span class="text-4xl font-bold text-brand-cyan">R$ 697</span>
+                  <span class="text-brand-light">/mês</span>
+                </div>
+                <p class="mt-2 text-brand-light">Até 100 pacientes ativos</p>
+              </div>
+
+              <ul class="mt-8 space-y-3">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Tudo do Starter +</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Relatórios personalizados</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">API para integração</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Onboarding dedicado</span>
+                </li>
+              </ul>
+
+              <a href="#contato" class="mt-8 block w-full rounded-lgx bg-brand-cyan px-6 py-3 text-center font-bold text-brand-charcoal hover:opacity-90 transition-opacity">
+                Contratar
+              </a>
+            </div>
+
+            <!-- Plano 200 -->
+            <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 hover:ring-brand-cyan/40 transition-all">
+              <div class="text-center">
+                <h3 class="text-2xl font-bold">Enterprise</h3>
+                <div class="mt-4">
+                  <span class="text-4xl font-bold text-brand-cyan">R$ 997</span>
+                  <span class="text-brand-light">/mês</span>
+                </div>
+                <p class="mt-2 text-brand-light">Até 200 pacientes ativos</p>
+              </div>
+
+              <ul class="mt-8 space-y-3">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Tudo do Professional +</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Conta manager dedicado</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">Customizações sob demanda</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm text-brand-light">SLA garantido</span>
+                </li>
+              </ul>
+
+              <a href="#contato" class="mt-8 block w-full rounded-lgx bg-white/10 px-6 py-3 text-center font-semibold hover:bg-white/20 transition-colors">
+                Contratar
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-8 text-center text-brand-light text-sm">
+            <p>* Valores por paciente ativo no mês. Precisa de mais de 200 acessos? <a href="#contato" class="text-brand-cyan hover:underline">Fale conosco</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROI / Calculadora -->
+      <section class="py-16 lg:py-24 bg-zinc-900/50">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-gradient-to-br from-brand-cyan/10 to-brand-green/10 ring-1 ring-brand-cyan/20 p-8 lg:p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Calculadora de ROI</h2>
+
+            <!-- Toggle entre cenários -->
+            <div class="flex justify-center gap-4 mb-8">
+              <button onclick="showScenarioNut('cobra')" id="btnCobraNut" class="px-6 py-3 rounded-lgx bg-brand-cyan text-brand-charcoal font-semibold transition-all">
+                💰 Cobra do paciente
+              </button>
+              <button onclick="showScenarioNut('naoCobra')" id="btnNaoCobraNut" class="px-6 py-3 rounded-lgx bg-white/10 ring-1 ring-white/20 text-white font-semibold transition-all">
+                🎁 Não cobra (absorve custo)
+              </button>
+            </div>
+
+            <!-- Cenário 1: COBRA DO PACIENTE -->
+            <div id="scenarioCobraNut" class="scenario-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold mb-4 text-brand-cyan text-lg">Seu cenário:</h4>
+                  <ul class="space-y-3 text-base">
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Pacientes ativos:</span>
+                      <span class="font-semibold">50</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Plano escolhido:</span>
+                      <span class="font-semibold">Starter (R$/mês)</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Você cobra por paciente:</span>
+                      <span class="font-semibold">R$ 40/mês</span>
+                    </li>
+                    <li class="flex justify-between items-center pt-2">
+                      <span class="text-brand-light">Receita mensal:</span>
+                      <span class="font-bold text-brand-green text-xl">R$ 2.000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-4 text-brand-cyan text-lg">Seu lucro:</h4>
+                  <ul class="space-y-3 text-base">
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Receita dos pacientes:</span>
+                      <span>R$ 2.000</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Custo FYIT:</span>
+                      <span class="text-red-400">- R$ 697</span>
+                    </li>
+                    <li class="flex justify-between items-center pt-2">
+                      <span class="text-lg font-semibold">Lucro mensal:</span>
+                      <span class="font-bold text-brand-green text-3xl">R$ 1.503</span>
+                    </li>
+                    <li class="flex justify-between items-center pt-4 mt-4 border-t border-white/10">
+                      <span class="text-brand-light">Setup (único):</span>
+                      <span class="text-yellow-400">R$ 5.000</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                      <span class="text-brand-light font-semibold">Payback:</span>
+                      <span class="font-bold text-brand-cyan">3 meses</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-8 text-center text-brand-light">
+                💡 <strong class="text-white">Dica:</strong> Com 100 pacientes no plano Professional, você fatura R$ 4.000/mês e lucra R$ 3.303/mês líquidos.
+              </p>
+            </div>
+
+            <!-- Cenário 2: NÃO COBRA (ABSORVE CUSTO) -->
+            <div id="scenarioNaoCobraNut" class="scenario-content hidden">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold mb-4 text-brand-cyan text-lg">Seu cenário:</h4>
+                  <ul class="space-y-3 text-base">
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Pacientes ativos:</span>
+                      <span class="font-semibold">50</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Plano escolhido:</span>
+                      <span class="font-semibold">Starter (R$/mês)</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2 border-b border-white/10">
+                      <span class="text-brand-light">Você cobra por paciente:</span>
+                      <span class="font-semibold text-brand-light">R$ 0 (absorve)</span>
+                    </li>
+                    <li class="flex justify-between items-center pt-2">
+                      <span class="text-brand-light">Custo mensal:</span>
+                      <span class="font-bold text-red-400 text-xl">- R$ 697</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-4 text-brand-cyan text-lg">Benefícios indiretos:</h4>
+                  <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-green text-lg flex-shrink-0">✓</span>
+                      <span class="text-brand-light"><strong class="text-white">89% de adesão</strong> à dieta (vs 15% tradicional)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-green text-lg flex-shrink-0">✓</span>
+                      <span class="text-brand-light"><strong class="text-white">3x mais renovações</strong> por resultados visíveis</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-green text-lg flex-shrink-0">✓</span>
+                      <span class="text-brand-light"><strong class="text-white">+50% de indicações</strong> (pacientes compartilham resultados)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-green text-lg flex-shrink-0">✓</span>
+                      <span class="text-brand-light"><strong class="text-white">Diferencial no mercado</strong> que nenhum concorrente tem</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-green text-lg flex-shrink-0">✓</span>
+                      <span class="text-brand-light"><strong class="text-white">Justifica honorários maiores</strong> pela tecnologia oferecida</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-8 text-center text-brand-light">
+                🎯 <strong class="text-white">ROI real:</strong> Investindo R$ 697/mês você aumenta drasticamente retenção e indicações. Muitos nutricionistas recuperam esse valor com apenas 2-3 novos pacientes vindos de indicação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        function showScenarioNut(scenario) {
+          const scenarioCobra = document.getElementById('scenarioCobraNut');
+          const scenarioNaoCobra = document.getElementById('scenarioNaoCobraNut');
+          const btnCobra = document.getElementById('btnCobraNut');
+          const btnNaoCobra = document.getElementById('btnNaoCobraNut');
+
+          if (scenario === 'cobra') {
+            scenarioCobra.classList.remove('hidden');
+            scenarioNaoCobra.classList.add('hidden');
+            btnCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            btnCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+            btnNaoCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+            btnNaoCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+          } else {
+            scenarioCobra.classList.add('hidden');
+            scenarioNaoCobra.classList.remove('hidden');
+            btnNaoCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            btnNaoCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+            btnCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+            btnCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+          }
+        }
+      </script>
+
+      <!-- CTA Final -->
+      <section id="contato" class="py-16 lg:py-24">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold">Pronto para escalar sua clínica?</h2>
+          <p class="mt-4 text-lg text-brand-light">Fale com um consultor e receba uma demonstração personalizada</p>
+
+          <div class="mt-8">
+            <a href="#contato"
+               class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 font-bold text-brand-charcoal text-lg hover:opacity-90 transition-opacity">
+              <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Falar com consultor no WhatsApp
+            </a>
+          </div>
+
+          <p class="mt-6 text-sm text-brand-light">Resposta em até 2 horas úteis</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <img src="logo.png" alt="FYIT" class="h-8 w-auto opacity-60" />
+          <p class="text-sm text-brand-light">&copy; 2025 FYIT. Todos os direitos reservados.</p>
+          <div class="flex gap-4 text-sm text-brand-light">
+            <a href="/" class="hover:text-brand-cyan transition-colors">Início</a>
+            <a href="/blog/" class="hover:text-brand-cyan transition-colors">Blog</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Formulário -->
+    <div id="modalForm" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+      <div class="bg-brand-charcoal ring-2 ring-brand-cyan rounded-2xl p-8 max-w-md w-full relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-brand-light hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <h3 class="text-2xl font-bold mb-2">Agende sua demonstração</h3>
+        <p class="text-brand-light text-sm mb-6">Preencha os dados e entraremos em contato em até 2 horas</p>
+
+        <form id="leadForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-2">Nome completo</label>
+            <input type="text" name="nome" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="seu@email.com">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Telefone/WhatsApp</label>
+            <input type="tel" name="telefone" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="(11) 99999-9999">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Quantos pacientes você atende?</label>
+            <select name="quantidade" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none">
+              <option value="">Selecione...</option>
+              <option value="1-30">1 a 30 pacientes</option>
+              <option value="31-50">31 a 50 pacientes</option>
+              <option value="51-100">51 a 100 pacientes</option>
+              <option value="101-200">101 a 200 pacientes</option>
+              <option value="200+">Mais de 200 pacientes</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full rounded-lgx bg-brand-cyan px-6 py-4 font-bold text-brand-charcoal hover:opacity-90 transition-opacity">
+            Agendar demonstração
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById('modalForm').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modalForm').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // Adiciona evento a todos os botões/links com href="#contato"
+      document.querySelectorAll('a[href="#contato"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      });
+
+      // Form submit
+      document.getElementById('leadForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+
+        console.log('Lead capturado:', data);
+
+        // Redireciona para WhatsApp com os dados
+        const message = `Olá! Gostaria de agendar uma demonstração.%0A%0ANome: ${data.nome}%0AEmail: ${data.email}%0ATelefone: ${data.telefone}%0APacientes: ${data.quantidade}`;
+        window.location.href = `https://wa.me/5511999999999?text=${message}`;
+      });
+
+      // Fecha modal ao clicar fora
+      document.getElementById('modalForm').addEventListener('click', (e) => {
+        if (e.target.id === 'modalForm') closeModal();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FYIT - Painel do Assinante</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-charcoal': '#131313',
+              'brand-cyan': '#00E0D1',
+              'brand-green': '#00FF88',
+              'brand-light': '#E0E0E0',
+              'brand-purple': '#8B5CF6',
+              'brand-pink': '#EC4899',
+              'brand-orange': '#F97316',
+              'brand-yellow': '#EAB308'
+            },
+            borderRadius: {
+              'lgx': '0.75rem',
+              'mdx': '0.5rem'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="hover:opacity-80 transition-opacity">
+            <img src="logo.png" alt="FYIT" class="h-12 w-auto" />
+          </a>
+          <div class="flex items-center gap-4">
+            <button class="text-sm font-medium text-gray-600 hover:text-gray-900">Sair</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+
+      <!-- User Info Card -->
+      <div class="bg-white rounded-lgx shadow-sm p-6 mb-6 text-center">
+        <div class="flex justify-center mb-4">
+          <img src="logo.png" alt="FYIT" class="h-20 w-20 rounded-full" />
+        </div>
+        <h1 class="text-2xl font-bold text-gray-900">Ana Silva</h1>
+        <p class="text-gray-600 text-sm">Cliente #5511999887766</p>
+      </div>
+
+      <!-- Calories Card -->
+      <div class="bg-white rounded-lgx shadow-sm p-8 mb-6">
+        <h2 class="text-xl font-semibold text-brand-cyan text-center mb-6">Calorias</h2>
+
+        <div class="flex justify-center mb-6">
+          <div class="relative w-64 h-64">
+            <!-- SVG Circle Progress -->
+            <svg class="transform -rotate-90 w-64 h-64">
+              <circle cx="128" cy="128" r="100" stroke="#F3F4F6" stroke-width="24" fill="none" />
+              <circle cx="128" cy="128" r="100" stroke="#EC4899" stroke-width="24" fill="none"
+                      stroke-dasharray="628" stroke-dashoffset="138" stroke-linecap="round" />
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <span class="text-5xl font-bold text-gray-900">1725</span>
+              <span class="text-gray-600">kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-brand-cyan font-semibold text-lg mb-2">78% da meta</p>
+          <p class="text-gray-600 text-sm">Meta: 2200 kcal</p>
+          <p class="text-gray-600 text-sm">Restam: 475 kcal</p>
+        </div>
+      </div>
+
+      <!-- Macros Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+        <!-- Proteínas -->
+        <div class="bg-white rounded-lgx shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-brand-cyan text-center mb-4">Proteínas</h3>
+          <div class="flex justify-center mb-4">
+            <div class="relative w-40 h-40">
+              <svg class="transform -rotate-90 w-40 h-40">
+                <circle cx="80" cy="80" r="60" stroke="#F3F4F6" stroke-width="16" fill="none" />
+                <circle cx="80" cy="80" r="60" stroke="#8B5CF6" stroke-width="16" fill="none"
+                        stroke-dasharray="377" stroke-dashoffset="19" stroke-linecap="round" />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-gray-900">133</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="text-brand-cyan font-semibold mb-1">95% da meta</p>
+            <p class="text-gray-600 text-sm">Restam: 7 g</p>
+          </div>
+        </div>
+
+        <!-- Carboidratos -->
+        <div class="bg-white rounded-lgx shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-brand-cyan text-center mb-4">Carboidratos</h3>
+          <div class="flex justify-center mb-4">
+            <div class="relative w-40 h-40">
+              <svg class="transform -rotate-90 w-40 h-40">
+                <circle cx="80" cy="80" r="60" stroke="#F3F4F6" stroke-width="16" fill="none" />
+                <circle cx="80" cy="80" r="60" stroke="#F97316" stroke-width="16" fill="none"
+                        stroke-dasharray="377" stroke-dashoffset="136" stroke-linecap="round" />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-gray-900">175</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="text-brand-cyan font-semibold mb-1">64% da meta</p>
+            <p class="text-gray-600 text-sm">Restam: 100 g</p>
+          </div>
+        </div>
+
+        <!-- Gorduras -->
+        <div class="bg-white rounded-lgx shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-brand-cyan text-center mb-4">Gorduras</h3>
+          <div class="flex justify-center mb-4">
+            <div class="relative w-40 h-40">
+              <svg class="transform -rotate-90 w-40 h-40">
+                <circle cx="80" cy="80" r="60" stroke="#F3F4F6" stroke-width="16" fill="none" />
+                <circle cx="80" cy="80" r="60" stroke="#00E0D1" stroke-width="16" fill="none"
+                        stroke-dasharray="377" stroke-dashoffset="117" stroke-linecap="round" />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-gray-900">59</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="text-brand-cyan font-semibold mb-1">69% da meta</p>
+            <p class="text-gray-600 text-sm">Restam: 26 g</p>
+          </div>
+        </div>
+
+        <!-- Fibras -->
+        <div class="bg-white rounded-lgx shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-brand-cyan text-center mb-4">Fibras</h3>
+          <div class="flex justify-center mb-4">
+            <div class="relative w-40 h-40">
+              <svg class="transform -rotate-90 w-40 h-40">
+                <circle cx="80" cy="80" r="60" stroke="#F3F4F6" stroke-width="16" fill="none" />
+                <circle cx="80" cy="80" r="60" stroke="#8B5CF6" stroke-width="16" fill="none"
+                        stroke-dasharray="377" stroke-dashoffset="38" stroke-linecap="round" />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-3xl font-bold text-gray-900">27</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="text-brand-cyan font-semibold mb-1">90% da meta</p>
+            <p class="text-gray-600 text-sm">Restam: 3 g</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hidratação -->
+      <div class="bg-white rounded-lgx shadow-sm p-8 mb-6">
+        <h2 class="text-xl font-semibold text-brand-cyan text-center mb-6">Hidratação</h2>
+
+        <div class="flex justify-center mb-6">
+          <div class="relative w-64 h-64">
+            <svg class="transform -rotate-90 w-64 h-64">
+              <circle cx="128" cy="128" r="100" stroke="#F3F4F6" stroke-width="24" fill="none" />
+              <circle cx="128" cy="128" r="100" stroke="#00FF88" stroke-width="24" fill="none"
+                      stroke-dasharray="628" stroke-dashoffset="396" stroke-linecap="round" />
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <span class="text-5xl font-bold text-gray-900">930</span>
+              <span class="text-gray-600">ml</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-brand-cyan font-semibold text-lg mb-2">37% da meta</p>
+          <p class="text-gray-600 text-sm">Meta: 2500 ml</p>
+          <p class="text-gray-600 text-sm">Restam: 1570 ml</p>
+        </div>
+      </div>
+
+      <!-- Motivacional -->
+      <div class="bg-white rounded-lgx shadow-sm p-6 mb-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-4xl">📅</span>
+            <div>
+              <h3 class="font-bold text-xl text-gray-900">Bom dia! 👋</h3>
+              <p class="text-gray-600">Quinta-Feira, 9 De Outubro De 2025</p>
+            </div>
+          </div>
+          <button class="px-6 py-3 bg-brand-cyan text-white font-semibold rounded-lgx hover:opacity-90 transition-opacity">
+            Muito bom
+          </button>
+        </div>
+        <div class="mt-4 flex items-center gap-2 text-gray-700">
+          <span>📈</span>
+          <p class="font-medium">Você está no caminho certo! 💪</p>
+        </div>
+      </div>
+
+      <!-- Ações Rápidas -->
+      <div class="bg-white rounded-lgx shadow-sm p-6 mb-6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="text-2xl">⚡</span>
+          <h2 class="text-xl font-bold text-gray-900">Ações Rápidas</h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">💧</span>
+            <span>Água 250ml</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">💧</span>
+            <span>Água 500ml</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">☕</span>
+            <span>Café s/ açúcar</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">🍎</span>
+            <span>Maçã média</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">🍪</span>
+            <span>Biscoito integral</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">🥗</span>
+            <span>Salada verde</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">🍗</span>
+            <span>Peito frango 100g</span>
+          </button>
+
+          <button class="p-4 rounded-lgx bg-brand-cyan text-white font-semibold hover:opacity-90 transition-opacity flex flex-col items-center gap-2">
+            <span class="text-2xl">🌾</span>
+            <span>Arroz integral</span>
+          </button>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3">
+      <div class="mx-auto max-w-7xl flex justify-around items-center">
+        <a href="#" class="flex flex-col items-center gap-1 text-brand-cyan">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center gap-1 text-gray-600 hover:text-brand-cyan">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+          </svg>
+          <span class="text-xs font-medium">Refeições</span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center gap-1 text-gray-600 hover:text-brand-cyan">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="text-xs font-medium">Metas</span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center gap-1 text-gray-600 hover:text-brand-cyan">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span class="text-xs font-medium">Histórico</span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center gap-1 text-gray-600 hover:text-brand-cyan">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          <span class="text-xs font-medium">Perfil</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Bottom padding to prevent content hiding under nav -->
+    <div class="h-20"></div>
+
+  </body>
+</html>
