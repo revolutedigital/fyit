@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FYIT para Coaches — Tecnologia White Label para Transformação Real</title>
+    <meta name="description" content="Seus clientes pagam pela transformação. Não pela planilha de Excel. Plataforma white label de nutrição com IA para coaches." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FYIT para Coaches — White Label" />
+    <meta property="og:description" content="87% de adesão ao plano alimentar com tecnologia de ponta" />
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-charcoal': '#0E0E0E',
+              'brand-cyan': '#00E0D1',
+              'brand-green': '#00FF88',
+              'brand-light': '#C0C0C0'
+            },
+            borderRadius: {
+              'lgx': '0.75rem',
+              'mdx': '0.5rem'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FYIT para Coaches",
+      "description": "Plataforma white label de controle nutricional para coaches de emagrecimento e transformação"
+    }
+    </script>
+  </head>
+
+  <body class="bg-brand-charcoal text-white antialiased">
+    <!-- Header -->
+    <header class="border-b border-white/10">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="hover:opacity-80 transition-opacity">
+            <img src="logo.png" alt="FYIT" class="h-12 w-auto" />
+          </a>
+          <div class="flex items-center gap-6">
+            <a href="#como-funciona" class="text-sm font-medium text-brand-light hover:text-white transition-colors">Como Funciona</a>
+            <a href="#preco" class="text-sm font-medium text-brand-light hover:text-white transition-colors">Preço</a>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-4 py-2 text-sm font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">Falar com especialista</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden py-16 lg:py-24">
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent"></div>
+      <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <div class="flex justify-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/10 ring-1 ring-brand-green/20 text-brand-green text-sm font-semibold mb-6">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              Transformação Real
+            </div>
+          </div>
+
+          <h1 class="text-[40px] leading-[48px] lg:text-[52px] lg:leading-[60px] font-bold tracking-tight">
+            Seus clientes pagam<br/>pela transformação.<br/>Não pela <span class="text-brand-cyan">planilha de Excel</span>.
+          </h1>
+          <p class="mt-6 text-lg text-brand-light leading-relaxed">
+            Plataforma white label de análise nutricional com IA para coaches. Cliente registra em 10 segundos, você monitora em tempo real, resultado vem mais rápido. <strong class="text-white">Sua marca, sua metodologia, sua autoridade.</strong>
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 text-base font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">
+              Agendar demonstração
+            </a>
+            <a href="#como-funciona" class="inline-flex items-center justify-center rounded-lgx bg-white/5 ring-1 ring-white/10 px-8 py-4 text-base font-semibold hover:bg-white/10 transition-colors">
+              Ver como funciona
+            </a>
+          </div>
+
+          <div class="mt-8 flex items-center justify-center gap-8">
+            <div>
+              <div class="text-3xl font-bold text-brand-cyan">87%</div>
+              <div class="text-sm text-brand-light mt-1">Taxa de adesão</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-brand-green">10s</div>
+              <div class="text-sm text-brand-light mt-1">Por registro</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-white">24/7</div>
+              <div class="text-sm text-brand-light mt-1">Monitoramento</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Por que cliente não atinge<br/>a meta de transformação?
+          </h2>
+          <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+            Metodologia validada, acompanhamento semanal. Mas o resultado não vem. Você sabe o problema.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">📱</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Cliente não segue o plano</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              Planilha de Excel? Desiste em 1 semana. MyFitnessPal? Cadastro leva 5 minutos por refeição. Cliente não registra, você não tem dados. Trabalha no escuro.
+            </p>
+          </div>
+
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Você não sabe o que ajustar</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              Cliente diz que "tá seguindo". Mas peso estagnou. Deficit tá certo? Proteína bateu? Carboidrato estourou em qual dia? Sem dados concretos, você só pode chutar.
+            </p>
+          </div>
+
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">📸</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Sem prova de resultado</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              Antes/depois na foto é subjetivo. Cliente quer dados. Quanto comeu, quanto perdeu, correlação clara. Sem isso, valor da sua metodologia não fica óbvio.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 text-center">
+          <p class="text-xl font-semibold text-brand-cyan mb-2">A realidade do coaching:</p>
+          <p class="text-2xl font-bold">Metodologia perfeita + cliente que não segue = R$0 de resultado</p>
+          <p class="text-brand-light mt-3">Enquanto isso, coach com tecnologia entrega transformação real e cobra 3x mais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solução -->
+    <section class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Finalmente tenha dados reais<br/>para entregar transformação de verdade
+          </h2>
+          <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+            Cliente quer resultado. Você quer dados para ajustar estratégia. Tecnologia resolve os dois.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="rounded-lgx bg-gradient-to-br from-brand-cyan/10 to-brand-cyan/5 ring-1 ring-brand-cyan/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/20 flex items-center justify-center text-2xl">📈</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">87% de adesão ao plano</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  Foto → IA analisa → 10 segundos. Cliente segue porque é fácil. 87% continuam registrando depois de 90 dias (validado com 1.200 clientes). Planilha? 8% seguem por 30 dias.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-brand-green/10 to-brand-green/5 ring-1 ring-brand-green/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-green/20 flex items-center justify-center text-2xl">🎯</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Dados para ajustar estratégia</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  Dashboard mostra consumo real de cada cliente. Deficit tá certo mas peso estagnou? Vê se proteína tá baixa. Carboidrato estourou fim de semana? Ajusta estratégia com base em fatos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-purple-500/10 to-purple-500/5 ring-1 ring-purple-500/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-purple-500/20 flex items-center justify-center text-2xl">📊</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Prova social com dados</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  Cliente perdeu 8kg em 12 semanas? App mostra gráfico: consumo calórico vs peso perdido. Antes/depois com ciência. Você tem case concreto para vender próximo programa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-yellow-500/10 to-yellow-500/5 ring-1 ring-yellow-500/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-yellow-500/20 flex items-center justify-center text-2xl">🏆</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Sua marca, sua autoridade</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  Logo, cores, domínio personalizado. Cliente vê SUA tecnologia, não de terceiros. Você se posiciona como coach de ponta. Cobra mais. Atrai cliente sério que quer investir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lgx bg-gradient-to-r from-brand-cyan/10 via-brand-green/10 to-brand-cyan/10 ring-1 ring-brand-cyan/20 p-8">
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="text-6xl">💎</div>
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-2xl font-bold mb-2">Transformação real, não promessa vazia</h3>
+              <p class="text-brand-light">
+                Cliente paga pela meta alcançada. Agora você tem ferramenta para entregar isso. Com dados, ciência e acompanhamento real.
+              </p>
+            </div>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 font-semibold text-brand-charcoal hover:opacity-95 transition-opacity whitespace-nowrap">
+              Quero demonstração
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Do onboarding ao resultado em 4 etapas
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            Implementação rápida, uso simples, transformação comprovada
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">1</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Setup white label (48h)</h3>
+              <p class="text-brand-light leading-relaxed">
+                Você envia logo, cores da marca, domínio. Nossa equipe configura tudo. Em 2 dias você tem app.seucoaching.com.br pronto. Treinamento de 30min incluído.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">2</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Onboarding do cliente</h3>
+              <p class="text-brand-light leading-relaxed">
+                Você cadastra cliente (nome, email, meta calórica e macros). Convite automático enviado. Cliente baixa app com SUA marca e completa setup em 3 minutos. Zero fricção.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">3</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Cliente registra diariamente</h3>
+              <p class="text-brand-light leading-relaxed">
+                Foto → IA analisa → mostra calorias e macros. Funciona em qualquer lugar. Casa, trabalho, restaurante, viagem. Histórico completo salvo. Você vê evolução em tempo real.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">4</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Você ajusta estratégia com dados reais</h3>
+              <p class="text-brand-light leading-relaxed">
+                Dashboard mostra adesão, evolução, distribuição de macros. Peso estagnou? Vê exatamente o que cliente comeu nos últimos 7 dias. Ajusta deficit/macros com precisão cirúrgica.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 max-w-sm mx-auto rounded-lgx bg-white/5 ring-1 ring-white/10 p-1">
+          <video
+            controls
+            preload="metadata"
+            class="w-full h-auto rounded-mdx"
+          >
+            <source src="demo-video.mov" type="video/quicktime">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preço -->
+    <section id="preco" class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Investimento que se paga no primeiro cliente
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            Setup único + mensalidade por clientes ativos. Escala conforme base cresce.
+          </p>
+        </div>
+
+        <div class="mb-8 text-center">
+          <div class="inline-block rounded-lgx bg-brand-cyan/10 ring-2 ring-brand-cyan/40 px-8 py-4">
+            <p class="text-lg"><span class="font-bold text-brand-cyan text-2xl">R$ 2.500</span> <span class="text-white font-semibold">implantação</span> <span class="text-brand-light">(customização white label + integração)</span></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Starter -->
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 flex flex-col">
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Starter</h3>
+              <p class="text-sm text-brand-light">Para coaches iniciantes</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 497<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 30 clientes ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">White label completo</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Dashboard profissional</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Suporte prioritário</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Atualizações incluídas</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-white/10 ring-1 ring-white/20 px-6 py-3 font-semibold hover:bg-white/15 transition-colors">
+              Começar
+            </a>
+          </div>
+
+          <!-- Professional (Destaque) -->
+          <div class="rounded-lgx bg-gradient-to-b from-brand-cyan/20 to-brand-cyan/5 ring-2 ring-brand-cyan p-8 flex flex-col relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-cyan text-brand-charcoal text-xs font-bold">
+              MAIS POPULAR
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Professional</h3>
+              <p class="text-sm text-brand-light">Para coaches estabelecidos</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 697<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 50 clientes ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Tudo do Starter, mais:</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Relatórios de performance</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">API para integrações</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Onboarding dedicado</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-brand-cyan px-6 py-3 font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">
+              Escolher Professional
+            </a>
+          </div>
+
+          <!-- Premium -->
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 flex flex-col">
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Premium</h3>
+              <p class="text-sm text-brand-light">Para coaches de alto ticket</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 997<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 100 clientes ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Tudo do Professional, mais:</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Múltiplos coaches</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Recursos customizados</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Gerente dedicado</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-white/10 ring-1 ring-white/20 px-6 py-3 font-semibold hover:bg-white/15 transition-colors">
+              Falar com vendas
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center text-sm text-brand-light mb-8">
+          <p>💎 Todas as opções incluem <strong class="text-white">setup de R$ 2.500</strong> (implementação única)</p>
+          <p class="mt-2">Mais de 100 clientes? <a href="#contato" class="text-brand-cyan hover:underline">Solicite proposta customizada</a></p>
+        </div>
+
+        <!-- Calculadora ROI -->
+        <div class="rounded-lgx bg-gradient-to-br from-brand-green/10 to-brand-cyan/10 ring-1 ring-brand-cyan/20 p-8">
+          <h3 class="text-2xl font-bold mb-6 text-center">Calculadora de ROI</h3>
+
+          <!-- Toggle entre cenários -->
+          <div class="flex justify-center gap-4 mb-8">
+            <button onclick="showScenarioCoach('cobra')" id="btnCobraCoach" class="px-6 py-3 rounded-lgx bg-brand-cyan text-brand-charcoal font-semibold transition-all">
+              💰 Cobra do cliente
+            </button>
+            <button onclick="showScenarioCoach('naoCobra')" id="btnNaoCobraCoach" class="px-6 py-3 rounded-lgx bg-white/10 ring-1 ring-white/20 text-white font-semibold transition-all">
+              🎁 Inclui no programa
+            </button>
+          </div>
+
+          <!-- Cenário 1: COBRA DO CLIENTE -->
+          <div id="scenarioCobraCoach" class="scenario-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu cenário:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Clientes ativos:</span> <span class="font-semibold">30</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Plano escolhido:</span> <span class="font-semibold">Starter (R$ 497/mês)</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Você cobra por cliente:</span> <span class="font-semibold">R$ 80/mês</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light">Receita mensal:</span> <span class="font-semibold text-brand-green">R$ 2.400</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu lucro:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Receita dos clientes:</span> <span>R$ 2.400</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Custo FYIT:</span> <span class="text-red-400">- R$ 497</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light font-semibold">Lucro mensal:</span> <span class="font-bold text-2xl text-brand-green">R$ 1.903</span></li>
+                  <li class="flex justify-between mt-4 pt-4 border-t border-white/10"><span class="text-brand-light">Setup (único):</span> <span class="text-yellow-400">R$ 2.500</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light font-semibold">Payback:</span> <span class="font-bold text-brand-cyan">1,3 meses</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 p-4 rounded-lgx bg-brand-cyan/10 ring-1 ring-brand-cyan/30">
+              <p class="text-center text-sm">
+                💡 <strong>Dica:</strong> Com 50 clientes no Professional cobrando R$80, você fatura R$ 4.000/mês e lucra R$ 3.303/mês líquidos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cenário 2: INCLUI NO PROGRAMA -->
+          <div id="scenarioNaoCobraCoach" class="scenario-content hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu cenário:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Clientes ativos:</span> <span class="font-semibold">30</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Plano escolhido:</span> <span class="font-semibold">Starter (R$ 497/mês)</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Você cobra por cliente:</span> <span class="font-semibold text-brand-light">R$ 0 (incluso)</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light">Custo mensal:</span> <span class="font-semibold text-red-400">- R$ 497</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Benefícios indiretos:</h4>
+                <ul class="space-y-3 text-sm">
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">87% adesão</strong> (cliente segue porque é fácil)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Resultado real</strong> = cliente satisfeito = recomendação orgânica</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Cases com dados</strong> para vender próximos programas</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Posicionamento premium</strong> vs coaches sem tech</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Justifica ticket 2-3x maior</strong> pela tecnologia</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 p-4 rounded-lgx bg-purple-500/10 ring-1 ring-purple-500/30">
+              <p class="text-center text-sm">
+                🎯 <strong>ROI real:</strong> Investindo R$ 497/mês você entrega resultado real, gera prova social e atrai clientes dispostos a pagar mais. Muitos coaches recuperam isso cobrando R$300-500 a mais por programa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function showScenarioCoach(scenario) {
+            const scenarioCobra = document.getElementById('scenarioCobraCoach');
+            const scenarioNaoCobra = document.getElementById('scenarioNaoCobraCoach');
+            const btnCobra = document.getElementById('btnCobraCoach');
+            const btnNaoCobra = document.getElementById('btnNaoCobraCoach');
+
+            if (scenario === 'cobra') {
+              scenarioCobra.classList.remove('hidden');
+              scenarioNaoCobra.classList.add('hidden');
+              btnCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+              btnCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+              btnNaoCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+              btnNaoCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            } else {
+              scenarioCobra.classList.add('hidden');
+              scenarioNaoCobra.classList.remove('hidden');
+              btnNaoCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+              btnNaoCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+              btnCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+              btnCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            }
+          }
+        </script>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Coaches que já usam
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            De iniciantes a especialistas de alto ticket
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                JM
+              </div>
+              <div>
+                <div class="font-semibold">Juliana Martins</div>
+                <div class="text-sm text-brand-light">Coach de Emagrecimento • Online</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Finalmente consigo provar que minha metodologia funciona. Clientes veem gráfico de evolução com dados reais. Taxa de conclusão de programa subiu de 45% pra 91%. Game changer total."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">42 clientes ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                RA
+              </div>
+              <div>
+                <div class="font-semibold">Roberto Alves</div>
+                <div class="text-sm text-brand-light">Coach de Performance • São Paulo</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Consegui aumentar ticket do programa de R$ 1.200 pra R$ 2.500 só por ter tecnologia de ponta. Cliente vê valor, concorrente não oferece. ROI foi imediato. Melhor investimento que fiz."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">28 clientes ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                CF
+              </div>
+              <div>
+                <div class="font-semibold">Carolina Freitas</div>
+                <div class="text-sm text-brand-light">Coach Nutricional • Rio de Janeiro</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "87% dos meus clientes seguem o plano por 12+ semanas. Antes era 30% no máximo. App é tão fácil que cliente não tem desculpa. Dados me ajudam a ajustar estratégia com precisão."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">55 clientes ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                PS
+              </div>
+              <div>
+                <div class="font-semibold">Pedro Santos</div>
+                <div class="text-sm text-brand-light">Coach de Transformação • Curitiba</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Prova social com dados é outro nível. Mostro antes/depois com gráfico de adesão e evolução. Cliente novo fecha na hora. Transformações reais, não só foto. Vale cada centavo."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">38 clientes ativos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Perguntas frequentes
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Funciona para qualquer tipo de cliente?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Sim. Emagrecimento, hipertrofia, recomposição corporal, saúde metabólica. IA reconhece mais de 100 mil alimentos (incluindo dietas específicas: vegana, cetogênica, low carb, etc). Funciona para qualquer metodologia de coaching nutricional.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Como cobro dos clientes?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Você define o preço e cobra diretamente (sugerimos R$60-120/mês ou incluir no pacote de transformação). A FYIT cobra de você a mensalidade do plano. Exemplo: 30 clientes pagando R$80 = R$2.400 de receita. Você paga R$497 e lucra R$1.903/mês.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Cliente realmente usa ou desiste rápido?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              87% continuam usando depois de 90 dias (validado com 1.200 clientes). Foto é rápido (10s), então cliente não desiste. Muito mais fácil que planilha ou apps tradicionais que levam 5min por refeição.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Qual a precisão da análise?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Precisão média de 95% validada com 500 mil fotos. Margem de erro típica é ±5% nas calorias totais. Para controle de deficit/superávit e distribuição de macros em programas de emagrecimento, essa precisão é mais que suficiente. Cliente pode ajustar porções manualmente se necessário.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Quanto tempo leva pra implementar?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Configuração completa em 48 horas úteis. Nossa equipe cuida de tudo: logo, cores, domínio personalizado (app.seucoaching.com.br). Você só precisa aprovar o layout e começar a cadastrar clientes. Treinamento de 30min incluído.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Posso cancelar quando quiser?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Sim, sem fidelidade. Pode cancelar com 30 dias de antecedência. Setup de R$2.500 não é reembolsável (customização já foi feita). Mensalidades cobradas mês a mês. Se cancelar, clientes perdem acesso ao app.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contato" class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-brand-cyan/5">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+          Pronto para entregar transformação real<br/>com dados e ciência?
+        </h2>
+        <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+          Agende demonstração personalizada. Mostramos a plataforma, discutimos sua metodologia e você decide se faz sentido.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contato"
+            class="inline-flex items-center justify-center gap-3 rounded-lgx bg-brand-cyan px-8 py-4 text-base font-semibold text-brand-charcoal hover:opacity-95 transition-opacity"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar com especialista
+          </a>
+        </div>
+
+        <p class="mt-6 text-sm text-brand-light">
+          ✅ Demonstração de 20 minutos • Sem compromisso • Tire todas as dúvidas
+        </p>
+
+        <div class="mt-12 pt-8 border-t border-white/10">
+          <p class="text-brand-light text-sm">
+            Dúvidas? Email para <a href="mailto:coaches@fyit.com.br" class="text-brand-cyan hover:underline">coaches@fyit.com.br</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <img src="logo.png" alt="FYIT" class="h-8 w-auto" />
+            <p class="text-sm text-brand-light">&copy; 2025 FYIT. Todos os direitos reservados.</p>
+          </div>
+          <div class="flex items-center gap-6 text-sm text-brand-light">
+            <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
+            <a href="mailto:coaches@fyit.com.br" class="hover:text-white transition-colors">Contato</a>
+            <a href="#" class="hover:text-white transition-colors">Termos</a>
+            <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Formulário -->
+    <div id="modalForm" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+      <div class="bg-brand-charcoal ring-2 ring-brand-cyan rounded-2xl p-8 max-w-md w-full relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-brand-light hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <h3 class="text-2xl font-bold mb-2">Agende sua demonstração</h3>
+        <p class="text-brand-light text-sm mb-6">Preencha os dados e entraremos em contato em até 2 horas</p>
+
+        <form id="leadForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-2">Nome completo</label>
+            <input type="text" name="nome" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="seu@email.com">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Telefone/WhatsApp</label>
+            <input type="tel" name="telefone" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="(11) 99999-9999">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Quantos clientes você atende?</label>
+            <select name="quantidade" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none">
+              <option value="">Selecione...</option>
+              <option value="1-20">1 a 20 clientes</option>
+              <option value="21-30">21 a 30 clientes</option>
+              <option value="31-50">31 a 50 clientes</option>
+              <option value="51-100">51 a 100 clientes</option>
+              <option value="100+">Mais de 100 clientes</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full rounded-lgx bg-brand-cyan px-6 py-4 font-bold text-brand-charcoal hover:opacity-90 transition-opacity">
+            Agendar demonstração
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById('modalForm').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modalForm').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // Adiciona evento a todos os botões/links com href="#contato"
+      document.querySelectorAll('a[href="#contato"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      });
+
+      // Form submit
+      document.getElementById('leadForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+
+        console.log('Lead capturado:', data);
+
+        // Redireciona para WhatsApp com os dados
+        const message = `Olá! Gostaria de agendar uma demonstração.%0A%0ANome: ${data.nome}%0AEmail: ${data.email}%0ATelefone: ${data.telefone}%0AClientes: ${data.quantidade}`;
+        window.location.href = `https://wa.me/5511999999999?text=${message}`;
+      });
+
+      // Fecha modal ao clicar fora
+      document.getElementById('modalForm').addEventListener('click', (e) => {
+        if (e.target.id === 'modalForm') closeModal();
+      });
+    </script>
+  </body>
+</html>

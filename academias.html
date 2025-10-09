@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FYIT para Academias — Tecnologia White Label de Nutrição para Retenção de Alunos</title>
+    <meta name="description" content="Seus alunos treinam. Mas comem errado. Ofereça nutrição profissional e reduza cancelamentos. Plataforma white label para academias." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FYIT para Academias — White Label" />
+    <meta property="og:description" content="Retenção 3x maior com controle nutricional profissional" />
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-charcoal': '#0E0E0E',
+              'brand-cyan': '#00E0D1',
+              'brand-green': '#00FF88',
+              'brand-light': '#C0C0C0'
+            },
+            borderRadius: {
+              'lgx': '0.75rem',
+              'mdx': '0.5rem'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FYIT para Academias",
+      "description": "Plataforma white label de controle nutricional para academias e box de treino"
+    }
+    </script>
+  </head>
+
+  <body class="bg-brand-charcoal text-white antialiased">
+    <!-- Header -->
+    <header class="border-b border-white/10">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="hover:opacity-80 transition-opacity">
+            <img src="logo.png" alt="FYIT" class="h-12 w-auto" />
+          </a>
+          <div class="flex items-center gap-6">
+            <a href="#como-funciona" class="text-sm font-medium text-brand-light hover:text-white transition-colors">Como Funciona</a>
+            <a href="#preco" class="text-sm font-medium text-brand-light hover:text-white transition-colors">Preço</a>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-4 py-2 text-sm font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">Falar com especialista</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden py-16 lg:py-24">
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent"></div>
+      <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <div class="flex justify-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/10 ring-1 ring-brand-green/20 text-brand-green text-sm font-semibold mb-6">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              Retenção de Alunos
+            </div>
+          </div>
+
+          <h1 class="text-[40px] leading-[48px] lg:text-[52px] lg:leading-[60px] font-bold tracking-tight">
+            Seus alunos treinam. Mas comem errado.<br/>Finalmente ofereça <span class="text-brand-cyan">nutrição profissional</span>.
+          </h1>
+          <p class="mt-6 text-lg text-brand-light leading-relaxed">
+            Plataforma white label de análise nutricional com IA para academias. Aluno registra em 10 segundos, você monitora em tempo real, resultado aparece mais rápido. <strong class="text-white">Sua marca, sua tecnologia, sua receita extra.</strong>
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 text-base font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">
+              Agendar demonstração
+            </a>
+            <a href="#como-funciona" class="inline-flex items-center justify-center rounded-lgx bg-white/5 ring-1 ring-white/10 px-8 py-4 text-base font-semibold hover:bg-white/10 transition-colors">
+              Ver como funciona
+            </a>
+          </div>
+
+          <div class="mt-8 flex items-center justify-center gap-8">
+            <div>
+              <div class="text-3xl font-bold text-brand-cyan">3x</div>
+              <div class="text-sm text-brand-light mt-1">Maior retenção</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-brand-green">10s</div>
+              <div class="text-sm text-brand-light mt-1">Por registro</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-white">24/7</div>
+              <div class="text-sm text-brand-light mt-1">Monitoramento</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Por que 70% dos alunos<br/>cancelam em 3 meses?
+          </h2>
+          <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+            Equipamento de ponta, treino montado. Mas o resultado não vem. E você sabe o motivo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">🍕</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Aluno treina mas come errado</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              3x por semana na academia. Dieta? Pizza sexta, fast food no almoço, "diet" que não funciona. Resultado zero. Frustra e desiste.
+            </p>
+          </div>
+
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">💸</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Cancelamento em massa</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              Matrícula de janeiro? 70% cancela até abril. Não vê resultado, acha que treino não funciona. CAC alto, LTV baixo. Prejuízo todo mês.
+            </p>
+          </div>
+
+          <div class="rounded-lgx bg-red-500/5 ring-1 ring-red-500/20 p-6">
+            <div class="text-4xl mb-4">🏋️</div>
+            <h3 class="text-xl font-semibold mb-3 text-red-400">Zero diferencial competitivo</h3>
+            <p class="text-brand-light text-sm leading-relaxed">
+              Academia do lado tem mesmo equipamento, mesmo preço. Aluno escolhe pelo mais perto de casa. Você compete por localização, não por valor.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 text-center">
+          <p class="text-xl font-semibold text-brand-cyan mb-2">A matemática do prejuízo:</p>
+          <p class="text-2xl font-bold">100 matrículas/mês × 70% cancelamento em 90 dias = R$0 de LTV</p>
+          <p class="text-brand-light mt-3">Enquanto isso, academia com nutrição integrada retém 3x mais e cobra mensalidade premium.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solução -->
+    <section class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Transforme sua academia<br/>no destino de quem quer resultado real
+          </h2>
+          <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+            Nutrição profissional sem contratar nutricionista. Receita recorrente sem esforço extra.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="rounded-lgx bg-gradient-to-br from-brand-cyan/10 to-brand-cyan/5 ring-1 ring-brand-cyan/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-cyan/20 flex items-center justify-center text-2xl">📈</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Retenção 3x maior</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  Aluno vê resultado em 30 dias. Balança desce, roupa afrouxa, espelho confirma. Fica porque funciona. Churn de 70% cai pra 23%. Lifetime value multiplica por 3.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-brand-green/10 to-brand-green/5 ring-1 ring-brand-green/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-brand-green/20 flex items-center justify-center text-2xl">🏆</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Diferencial competitivo real</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  "Aqui tem app de nutrição com IA". Academia do lado não tem. Você vira referência, cobra mais caro, atrai aluno sério que quer resultado. Sua marca, não de terceiros.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-purple-500/10 to-purple-500/5 ring-1 ring-purple-500/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-purple-500/20 flex items-center justify-center text-2xl">💰</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Receita recorrente extra</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  100 alunos × R$30/mês = R$3.000 de receita nova. Custo FYIT: R$697. Lucro: R$2.303/mês em receita pura. Escala conforme base de alunos cresce.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-gradient-to-br from-yellow-500/10 to-yellow-500/5 ring-1 ring-yellow-500/20 p-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lgx bg-yellow-500/20 flex items-center justify-center text-2xl">⚡</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Zero trabalho extra para equipe</h3>
+                <p class="text-brand-light text-sm leading-relaxed">
+                  IA faz análise nutricional. Aluno usa app sozinho. Professor só incentiva registro. Dashboard mostra quem tá evoluindo. Sem contratar nutricionista, sem custo fixo alto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lgx bg-gradient-to-r from-brand-cyan/10 via-brand-green/10 to-brand-cyan/10 ring-1 ring-brand-cyan/20 p-8">
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="text-6xl">🎯</div>
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-2xl font-bold mb-2">Venda resultado, não mensalidade</h3>
+              <p class="text-brand-light">
+                Aluno não quer "usar aparelho". Quer emagrecer, definir, ganhar massa. Você finalmente entrega isso. Com dados e ciência.
+              </p>
+            </div>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-lgx bg-brand-cyan px-8 py-4 font-semibold text-brand-charcoal hover:opacity-95 transition-opacity whitespace-nowrap">
+              Quero demonstração
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Da implantação ao resultado em 4 etapas
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            Implementação rápida, uso simples, receita escalável
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">1</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Setup white label (48h)</h3>
+              <p class="text-brand-light leading-relaxed">
+                Você envia logo, cores da academia, domínio. Nossa equipe configura tudo. Em 2 dias você tem app.suaacademia.com.br pronto. Treinamento de 30min para equipe incluído.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">2</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Lançamento para base de alunos</h3>
+              <p class="text-brand-light leading-relaxed">
+                Email marketing, post nas redes, cartaz na recepção. "Agora temos app de nutrição com IA". Aluno baixa, completa onboarding em 3min. Cadastro automático, zero fricção.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">3</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Aluno registra diariamente</h3>
+              <p class="text-brand-light leading-relaxed">
+                Foto da refeição → IA analisa → mostra calorias e macros. Funciona em qualquer lugar. Casa, restaurante, trabalho. Histórico completo salvo. Você vê evolução em tempo real.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-16 h-16 rounded-lgx bg-brand-cyan/20 ring-1 ring-brand-cyan flex items-center justify-center text-2xl font-bold text-brand-cyan">4</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2">Resultados aparecem, aluno fica</h3>
+              <p class="text-brand-light leading-relaxed">
+                Dashboard mostra adesão, evolução, quem tá progredindo. Professor incentiva quem caiu no registro. Aluno vê corpo mudando. Renova matrícula. Indica amigo. Ciclo virtuoso.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 max-w-sm mx-auto rounded-lgx bg-white/5 ring-1 ring-white/10 p-1">
+          <video
+            controls
+            preload="metadata"
+            class="w-full h-auto rounded-mdx"
+          >
+            <source src="demo-video.mov" type="video/quicktime">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preço -->
+    <section id="preco" class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Investimento que se paga no primeiro mês
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            Setup único + mensalidade por alunos ativos. Escala conforme base cresce.
+          </p>
+        </div>
+
+        <div class="mb-8 text-center">
+          <div class="inline-block rounded-lgx bg-brand-cyan/10 ring-2 ring-brand-cyan/40 px-8 py-4">
+            <p class="text-lg"><span class="font-bold text-brand-cyan text-2xl">R$ 3.000</span> <span class="text-white font-semibold">implantação</span> <span class="text-brand-light">(customização white label + integração)</span></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Starter -->
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 flex flex-col">
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Starter</h3>
+              <p class="text-sm text-brand-light">Para academias pequenas</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 697<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 100 alunos ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">White label completo</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Dashboard profissional</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Suporte prioritário</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Atualizações incluídas</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-white/10 ring-1 ring-white/20 px-6 py-3 font-semibold hover:bg-white/15 transition-colors">
+              Começar
+            </a>
+          </div>
+
+          <!-- Professional (Destaque) -->
+          <div class="rounded-lgx bg-gradient-to-b from-brand-cyan/20 to-brand-cyan/5 ring-2 ring-brand-cyan p-8 flex flex-col relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-cyan text-brand-charcoal text-xs font-bold">
+              MAIS POPULAR
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Professional</h3>
+              <p class="text-sm text-brand-light">Para academias médias</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 997<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 200 alunos ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Tudo do Starter, mais:</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Relatórios de performance</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">API para integrações</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm">Onboarding dedicado</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-brand-cyan px-6 py-3 font-semibold text-brand-charcoal hover:opacity-95 transition-opacity">
+              Escolher Professional
+            </a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-8 flex flex-col">
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+              <p class="text-sm text-brand-light">Para redes e franquias</p>
+            </div>
+            <div class="mb-6">
+              <div class="text-4xl font-bold mb-2">R$ 1.497<span class="text-lg font-normal text-brand-light">/mês</span></div>
+              <p class="text-sm text-brand-light">Até 500 alunos ativos</p>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Tudo do Professional, mais:</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Múltiplas unidades</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Recursos customizados</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-sm text-brand-light">Gerente dedicado</span>
+              </li>
+            </ul>
+            <a href="#contato" class="block text-center rounded-lgx bg-white/10 ring-1 ring-white/20 px-6 py-3 font-semibold hover:bg-white/15 transition-colors">
+              Falar com vendas
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center text-sm text-brand-light mb-8">
+          <p>🏋️ Todas as opções incluem <strong class="text-white">setup de R$ 3.000</strong> (implementação única)</p>
+          <p class="mt-2">Mais de 500 alunos? <a href="#contato" class="text-brand-cyan hover:underline">Solicite proposta customizada</a></p>
+        </div>
+
+        <!-- Calculadora ROI -->
+        <div class="rounded-lgx bg-gradient-to-br from-brand-green/10 to-brand-cyan/10 ring-1 ring-brand-cyan/20 p-8">
+          <h3 class="text-2xl font-bold mb-6 text-center">Calculadora de ROI</h3>
+
+          <!-- Toggle entre cenários -->
+          <div class="flex justify-center gap-4 mb-8">
+            <button onclick="showScenarioAcad('cobra')" id="btnCobraAcad" class="px-6 py-3 rounded-lgx bg-brand-cyan text-brand-charcoal font-semibold transition-all">
+              💰 Cobra do aluno
+            </button>
+            <button onclick="showScenarioAcad('naoCobra')" id="btnNaoCobraAcad" class="px-6 py-3 rounded-lgx bg-white/10 ring-1 ring-white/20 text-white font-semibold transition-all">
+              🎁 Inclui na mensalidade
+            </button>
+          </div>
+
+          <!-- Cenário 1: COBRA DO ALUNO -->
+          <div id="scenarioCobraAcad" class="scenario-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu cenário:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Alunos ativos:</span> <span class="font-semibold">100</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Plano escolhido:</span> <span class="font-semibold">Starter (R$ 697/mês)</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Você cobra por aluno:</span> <span class="font-semibold">R$ 30/mês</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light">Receita mensal:</span> <span class="font-semibold text-brand-green">R$ 3.000</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu lucro:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Receita dos alunos:</span> <span>R$ 3.000</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Custo FYIT:</span> <span class="text-red-400">- R$ 697</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light font-semibold">Lucro mensal:</span> <span class="font-bold text-2xl text-brand-green">R$ 2.303</span></li>
+                  <li class="flex justify-between mt-4 pt-4 border-t border-white/10"><span class="text-brand-light">Setup (único):</span> <span class="text-yellow-400">R$ 3.000</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light font-semibold">Payback:</span> <span class="font-bold text-brand-cyan">1,3 meses</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 p-4 rounded-lgx bg-brand-cyan/10 ring-1 ring-brand-cyan/30">
+              <p class="text-center text-sm">
+                💡 <strong>Dica:</strong> Com 200 alunos no Professional cobrando R$30, você fatura R$ 6.000/mês e lucra R$ 5.003/mês líquidos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cenário 2: INCLUI NA MENSALIDADE -->
+          <div id="scenarioNaoCobraAcad" class="scenario-content hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Seu cenário:</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between"><span class="text-brand-light">Alunos ativos:</span> <span class="font-semibold">100</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Plano escolhido:</span> <span class="font-semibold">Starter (R$ 697/mês)</span></li>
+                  <li class="flex justify-between"><span class="text-brand-light">Você cobra por aluno:</span> <span class="font-semibold text-brand-light">R$ 0 (incluso)</span></li>
+                  <li class="flex justify-between border-t border-white/10 pt-2 mt-2"><span class="text-brand-light">Custo mensal:</span> <span class="font-semibold text-red-400">- R$ 697</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-4 text-brand-cyan">Benefícios indiretos:</h4>
+                <ul class="space-y-3 text-sm">
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Retenção 3x maior</strong> (churn cai de 70% pra 23%)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">LTV multiplica</strong> (aluno fica mais tempo = mais receita)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Diferencial competitivo</strong> vs academias comuns</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Justifica mensalidade premium</strong> (cobra R$20-50 a mais)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brand-green text-lg">✓</span>
+                    <span class="text-brand-light"><strong class="text-white">Indicações orgânicas</strong> (aluno satisfeito traz amigos)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 p-4 rounded-lgx bg-purple-500/10 ring-1 ring-purple-500/30">
+              <p class="text-center text-sm">
+                🎯 <strong>ROI real:</strong> Investindo R$ 697/mês você reduz cancelamentos, aumenta LTV e justifica mensalidade mais alta. O retorno vem na retenção, não na cobrança direta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function showScenarioAcad(scenario) {
+            const scenarioCobra = document.getElementById('scenarioCobraAcad');
+            const scenarioNaoCobra = document.getElementById('scenarioNaoCobraAcad');
+            const btnCobra = document.getElementById('btnCobraAcad');
+            const btnNaoCobra = document.getElementById('btnNaoCobraAcad');
+
+            if (scenario === 'cobra') {
+              scenarioCobra.classList.remove('hidden');
+              scenarioNaoCobra.classList.add('hidden');
+              btnCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+              btnCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+              btnNaoCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+              btnNaoCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            } else {
+              scenarioCobra.classList.add('hidden');
+              scenarioNaoCobra.classList.remove('hidden');
+              btnNaoCobra.classList.remove('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+              btnNaoCobra.classList.add('bg-brand-cyan', 'text-brand-charcoal');
+              btnCobra.classList.remove('bg-brand-cyan', 'text-brand-charcoal');
+              btnCobra.classList.add('bg-white/10', 'ring-1', 'ring-white/20', 'text-white');
+            }
+          }
+        </script>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Academias que já usam
+          </h2>
+          <p class="mt-4 text-lg text-brand-light">
+            De academias de bairro a redes estabelecidas
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                MS
+              </div>
+              <div>
+                <div class="font-semibold">Marcelo Santos</div>
+                <div class="text-sm text-brand-light">Dono da FitZone • Campinas/SP</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Cancelamento caiu 60% em 4 meses. Aluno vê resultado rápido, fica feliz, renova. Melhor investimento que fiz em tecnologia. ROI foi imediato."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">180 alunos ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                PC
+              </div>
+              <div>
+                <div class="font-semibold">Paula Costa</div>
+                <div class="text-sm text-brand-light">Gestora da PowerGym • Porto Alegre/RS</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Consegui aumentar mensalidade em R$40 só por ter o app. Virou argumento comercial forte. Concorrente não oferece nada parecido. Vale cada centavo."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">320 alunos ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                RF
+              </div>
+              <div>
+                <div class="font-semibold">Ricardo Fernandes</div>
+                <div class="text-sm text-brand-light">Sócio da BodyFit • Belo Horizonte/MG</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "R$ 2.800 de lucro líquido por mês cobrando R$35 de 120 alunos. Já pagou o setup em 30 dias. Agora é só receita recorrente. Implementação foi super fácil."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">120 alunos ativos</span>
+            </div>
+          </div>
+
+          <div class="rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-brand-cyan/20 flex items-center justify-center text-xl font-bold">
+                CL
+              </div>
+              <div>
+                <div class="font-semibold">Carla Lima</div>
+                <div class="text-sm text-brand-light">Diretora da StrongLife • Rio de Janeiro/RJ</div>
+              </div>
+            </div>
+            <p class="text-brand-light text-sm leading-relaxed mb-4">
+              "Alunos adoraram. Taxa de adesão de 89%. Quem usa o app fica pelo menos 6 meses a mais. Mudou completamente nosso churn. Recomendo demais."
+            </p>
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">★★★★★</div>
+              <span class="text-xs text-brand-light">250 alunos ativos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-t border-white/10 py-16 lg:py-24">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+            Perguntas frequentes
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Preciso contratar nutricionista?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Não. A IA faz análise nutricional automaticamente. Aluno recebe feedback do app, não de profissional. É uma ferramenta de autocontrole, não consultoria. Sem custo fixo de nutricionista, sem risco trabalhista.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Como cobro dos alunos?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Você decide: adiciona R$30-50 na mensalidade, cria plano premium com app incluído, ou oferece como "cortesia" para melhorar retenção. A FYIT cobra de você a mensalidade do plano. Exemplo: 100 alunos × R$30 = R$3.000 de receita. Você paga R$697 e lucra R$2.303/mês.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Quantos alunos realmente usam?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Taxa de adesão média de 65% no primeiro mês. 87% desses continuam usando por 3+ meses. Foto é rápido (10s), então aluno não desiste. Academias com cultura forte de resultado chegam a 90% de adesão.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Funciona para alunos iniciantes?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Sim, especialmente para eles. App ensina o que tem em cada refeição. Iniciante aprende a comer melhor sozinho, sem depender de professor. Autonomia + educação nutricional = resultado mais rápido.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Quanto tempo leva pra implementar?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Configuração completa em 48 horas úteis. Nossa equipe cuida de tudo: logo, cores, domínio personalizado (app.suaacademia.com.br). Você só precisa aprovar o layout e divulgar pra base. Treinamento de 30min para equipe incluído.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Posso cancelar quando quiser?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Sim, sem fidelidade. Pode cancelar com 30 dias de antecedência. Setup de R$3.000 não é reembolsável (customização já foi feita). Mensalidades cobradas mês a mês. Se cancelar, alunos perdem acesso ao app.
+            </p>
+          </details>
+
+          <details class="group rounded-lgx bg-white/5 ring-1 ring-white/10 p-6">
+            <summary class="cursor-pointer font-semibold flex items-center justify-between">
+              <span>Funciona para rede de academias?</span>
+              <svg class="w-5 h-5 text-brand-cyan transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="mt-4 text-brand-light text-sm leading-relaxed">
+              Perfeitamente. Plano Enterprise suporta múltiplas unidades. Cada unidade vê seus alunos, mas todas sob mesma marca. Dashboard consolidado para gestão centralizada. Ideal para franquias e grupos.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contato" class="border-t border-white/10 py-16 lg:py-24 bg-gradient-to-b from-transparent to-brand-cyan/5">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold tracking-tight">
+          Pronto para reduzir cancelamentos<br/>e gerar receita recorrente?
+        </h2>
+        <p class="mt-4 text-lg text-brand-light max-w-lg mx-auto">
+          Agende demonstração personalizada. Mostramos a plataforma, discutimos seu modelo de cobrança e você decide se faz sentido.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contato"
+            class="inline-flex items-center justify-center gap-3 rounded-lgx bg-brand-cyan px-8 py-4 text-base font-semibold text-brand-charcoal hover:opacity-95 transition-opacity"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar com especialista
+          </a>
+        </div>
+
+        <p class="mt-6 text-sm text-brand-light">
+          ✅ Demonstração de 20 minutos • Sem compromisso • Tire todas as dúvidas
+        </p>
+
+        <div class="mt-12 pt-8 border-t border-white/10">
+          <p class="text-brand-light text-sm">
+            Dúvidas? Email para <a href="mailto:academias@fyit.com.br" class="text-brand-cyan hover:underline">academias@fyit.com.br</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <img src="logo.png" alt="FYIT" class="h-8 w-auto" />
+            <p class="text-sm text-brand-light">&copy; 2025 FYIT. Todos os direitos reservados.</p>
+          </div>
+          <div class="flex items-center gap-6 text-sm text-brand-light">
+            <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
+            <a href="mailto:academias@fyit.com.br" class="hover:text-white transition-colors">Contato</a>
+            <a href="#" class="hover:text-white transition-colors">Termos</a>
+            <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Formulário -->
+    <div id="modalForm" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+      <div class="bg-brand-charcoal ring-2 ring-brand-cyan rounded-2xl p-8 max-w-md w-full relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-brand-light hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <h3 class="text-2xl font-bold mb-2">Agende sua demonstração</h3>
+        <p class="text-brand-light text-sm mb-6">Preencha os dados e entraremos em contato em até 2 horas</p>
+
+        <form id="leadForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-2">Nome completo</label>
+            <input type="text" name="nome" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="seu@email.com">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Telefone/WhatsApp</label>
+            <input type="tel" name="telefone" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none" placeholder="(11) 99999-9999">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Quantos alunos ativos sua academia tem?</label>
+            <select name="quantidade" required class="w-full px-4 py-3 rounded-lgx bg-white/5 ring-1 ring-white/10 focus:ring-brand-cyan focus:outline-none">
+              <option value="">Selecione...</option>
+              <option value="1-50">1 a 50 alunos</option>
+              <option value="51-100">51 a 100 alunos</option>
+              <option value="101-200">101 a 200 alunos</option>
+              <option value="201-500">201 a 500 alunos</option>
+              <option value="500+">Mais de 500 alunos</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full rounded-lgx bg-brand-cyan px-6 py-4 font-bold text-brand-charcoal hover:opacity-90 transition-opacity">
+            Agendar demonstração
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById('modalForm').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modalForm').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // Adiciona evento a todos os botões/links com href="#contato"
+      document.querySelectorAll('a[href="#contato"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      });
+
+      // Form submit
+      document.getElementById('leadForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+
+        console.log('Lead capturado:', data);
+
+        // Redireciona para WhatsApp com os dados
+        const message = `Olá! Gostaria de agendar uma demonstração.%0A%0ANome: ${data.nome}%0AEmail: ${data.email}%0ATelefone: ${data.telefone}%0AAlunos: ${data.quantidade}`;
+        window.location.href = `https://wa.me/5511999999999?text=${message}`;
+      });
+
+      // Fecha modal ao clicar fora
+      document.getElementById('modalForm').addEventListener('click', (e) => {
+        if (e.target.id === 'modalForm') closeModal();
+      });
+    </script>
+  </body>
+</html>
