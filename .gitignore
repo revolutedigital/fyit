@@ -4,9 +4,12 @@ package-lock.json
 yarn.lock
 
 # Build outputs
-dist/
+dist/*.map
 *.min.js
 *.min.css
+
+# KEEP dist/output.css for GitHub Pages deployment
+!dist/output.css
 
 # Environment variables
 .env
