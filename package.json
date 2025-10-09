@@ -1,0 +1,28 @@
+{
+  "name": "fyit-landing",
+  "version": "1.0.0",
+  "description": "FYIT - Contador de Calorias com IA",
+  "scripts": {
+    "dev": "npm run watch:css",
+    "build": "npm run build:css && npm run optimize:html && npm run optimize:images",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "optimize:html": "node scripts/optimize-html.js",
+    "optimize:images": "node scripts/optimize-images.js",
+    "test": "npm run test:html && npm run test:lighthouse",
+    "test:html": "html-validator --file='*.html' --verbose",
+    "test:lighthouse": "echo 'Lighthouse test - run manually'",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": ["fitness", "nutrition", "calorie-counter", "ai"],
+  "author": "FYIT",
+  "license": "PROPRIETARY",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "html-minifier-terser": "^7.2.0",
+    "eslint": "^8.56.0",
+    "sharp": "^0.33.2"
+  }
+}
