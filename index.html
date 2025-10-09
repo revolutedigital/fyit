@@ -9,7 +9,9 @@
     <meta name="description" content="Tire uma foto do prato e saiba em 10 segundos se está comendo certo. IA que mostra calorias reais e te ajuda a chegar no shape. Emagreça ou ganhe massa muscular. R$197/ano." />
     <meta name="keywords" content="contador de calorias, contar calorias, app fitness, dieta, emagrecimento, ganhar massa muscular, nutrição, IA nutrição, foto calorias, MyFitnessPal, FatSecret" />
     <meta name="author" content="FYIT" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    <link rel="preload" href="/dist/output.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght;500;600;700&display=swap" as="style"> />
     <link rel="canonical" href="https://fyit.com.br/" />
 
     <!-- Open Graph / Twitter -->
@@ -33,7 +35,7 @@
     <link rel="dns-prefetch" href="https://wa.me" />
 
     <!-- Tailwind Config (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/output.css">
     <script>
       tailwind.config = {
           darkMode: 'media',
@@ -274,7 +276,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between py-4" role="navigation" aria-label="Principal">
           <a href="#inicio" class="flex items-center gap-2 hover:opacity-80 transition-opacity" aria-label="Início">
-            <img src="logo.png" alt="FYIT" class="h-12 w-auto" />
+            <img src="logo.png" alt="FYIT - Contador de Calorias com IA" class="h-12 w-auto" />
           </a>
 
           <button id="menu-toggle" class="sm:hidden inline-flex items-center justify-center rounded-mdx p-2 text-white/80 hover:text-brand-cyan hover:bg-brand-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan" aria-label="Abrir menu" aria-controls="menu-panel" aria-expanded="false">
