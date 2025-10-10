@@ -850,12 +850,25 @@
       });
 
       // Form submit
-      document.getElementById('leadForm').addEventListener('submit', (e) => {
+      document.getElementById('leadForm').addEventListener('submit', async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData);
 
         console.log('Lead capturado:', data);
+
+        // Envia para webhook
+        try {
+          await fetch('https://webhook.messengermax.com.br/webhook/recebimento_leads_fyit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+          });
+        } catch (error) {
+          console.error('Erro ao enviar lead:', error);
+        }
 
         // Redireciona para WhatsApp com os dados
         const message = `Olá! Gostaria de agendar uma demonstração.%0A%0ANome: ${data.nome}%0AEmail: ${data.email}%0ATelefone: ${data.telefone}%0AAlunos: ${data.quantidade}`;
